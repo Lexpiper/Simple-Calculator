@@ -55,7 +55,7 @@ function App() {
   return (
     <div className="App flex h-screen items-center justify-center bg-[url(https://media.istockphoto.com/id/170958625/photo/dark-blue-grunge-background.jpg?b=1&s=170667a&w=0&k=20&c=UV13_w89rM2RJbG-2l-aSD70qP6i3zkLD9QtFZUQMzA=)] p-4">
       <div className="calculator w-full max-w-[400px] bg-[#eee] rounded-2xl overflow-hidden shadow-md">
-        <div className="display p-8 text-right bg-black text-white text-lg font-[400] shadow-lg">
+        <div className="display p-8 text-right bg-black text-white text-2xl font-[400] shadow-lg">
           {result ? (
             <span className="text-sm text-[#888] italic">({result})</span>
           ) : (
@@ -118,7 +118,12 @@ function App() {
           </button>
           <button
             className="bg-gray-900 appearance-none  hover:bg-slate-700  flex-1 basis-[33.333%] max-w-[33.333%]   hover:opsacity-[0.9] border-none outline-none text-white text-xl p-4 cursor-pointer transition-[0.4s]"
-            onClick={() => calculate()}
+            onClick={
+              () => { 
+                calculate()
+                setResult("")
+              }
+            }
           >
             =
           </button>
