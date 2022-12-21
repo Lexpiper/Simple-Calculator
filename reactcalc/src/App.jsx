@@ -79,7 +79,7 @@ function App() {
           </button>
           <button
             className=" appearance-none flex-1 0% bg-pink-600 hover:opsacity-[0.9] hover:bg-pink-700 border-none outline-none text-white text-xl p-4 cursor-pointer transition-[0.4s] font-bold"
-            onClick={() => updateCalc("*")}
+            onClick={() => updateCalc("x")}
           >
             x
           </button>
