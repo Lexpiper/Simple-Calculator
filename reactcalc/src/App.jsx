@@ -53,7 +53,7 @@ function App() {
     setCalc(value);
   };
   return (
-    <div className="App flex h-screen items-center justify-center bg-[url(https://media.istockphoto.com/id/170958625/photo/dark-blue-grunge-background.jpg?b=1&s=170667a&w=0&k=20&c=UV13_w89rM2RJbG-2l-aSD70qP6i3zkLD9QtFZUQMzA=)] p-4">
+    <div className="App flex h-screen items-center justify-center bg-[url(https://media.istockphoto.com/id/170958625/photo/dark-blue-grunge-background.jpg?b=1&s=170667a&w=0&k=20&c=UV13_w89rM2RJbG-2l-aSD70qP6i3zkLD9QtFZUQMzA=)] bg-no-repeat bg-cover p-4">
       <div className="calculator w-full max-w-[400px] bg-[#eee] rounded-2xl overflow-hidden shadow-md">
         <div className="display p-8 text-right bg-black text-white text-2xl font-[400] shadow-lg">
           {result ? (
